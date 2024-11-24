@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- logo -->
+        <a href="home.html" class="logo">Haymi</a>
+
+        <!-- Mobile and Tab portrait -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <img src="images/menu.png" alt="Menu Icon" class="hamburger-icon" />
+        </button>
+        <!-- Desktop and Tab-landscape-->
+        <ul class="nav_links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobby.html">Hobby</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Mobile-Portrait -->
+      <section id="contact">
+        <div class="contact_image">
+          <img src="images/GetInTouch.png" alt="Contact Illustration" />
+        </div>
+        <div class="contact_box">
+          <h1 class="mobile_portTab">Let's Talk</h1>
+          <h1 class="mobile_landscape">Contact Me</h1>
+          <h1 class="desktop">Get in Touch</h1>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject" required />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="contact_details">
+          <p>Phone: 0929871221</p>
+          <p>
+            Email:
+            <a href="mailto:haymanotseyoum3@gmail.com"
+              >haymanotseyoum3@gmail.com</a
+            >
+          </p>
+          <p>Address: Addis Ababa, Ethiopia</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Find Me On:</p>
+        <div class="social_media">
+          <a href="mailto:haymanotseyoum3@gmail.com" target="_blank"
+            ><img src="images/mail.png" alt="Mail"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="images/telegram.png" alt="Telegram"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="images/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="images/github.png" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-container">
+        <!-- Div 1 -->
+        <div class="footer-item">
+          <img src="images/telegram.png" alt="Telegram Icon" class="footer-icon" />
+          <p>Telegram</p>
+        </div>
+        <!-- Div 2 -->
+        <div class="footer-item">
+          <img
+            src="images/mail.png"
+            alt="mail Icon"
+            class="footer-icon"
+          />
+          <p>Email</p>
+        </div>
+        <!-- Div 3 -->
+        <div class="footer-item">
+          <img
+            src="images/github.png"
+            alt="github Icon"
+            class="footer-icon"
+          />
+          <p>GitHub</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

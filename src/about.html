@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- logo -->
+        <a href="home.html" class="logo">Haymi</a>
+
+        <!-- Mobile and Tab portrait -->
+        <button class="hamburger" aria-label="Toggle navigation">
+          <img src="images/menu.png" alt="Menu Icon" class="hamburger-icon" />
+        </button>
+        <!-- Desktop and Tab-landscape-->
+        <ul class="nav_links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobby.html">Hobby</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h1>About Me</h1>
+        <div class="about_content">
+          <p>
+            Hello! I'm Haymi, a software engineering student passionate about
+            creating innovative solutions, learning new technologies, and
+            telling stories that inspire others. Welcome to my personal website!
+          </p>
+          <img
+            src="images/profile1.png"
+            alt="Haymi's profile picture"
+            class="mobile_landscape_specific"
+          />
+        </div>
+
+        <div class="education">
+          <!-- Mobile-Portrait and Tab-Landscape -->
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Institution</th>
+                <th>Degree</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2022 - Present</td>
+                <td>Addis Ababa University</td>
+                <td>BSc in Software Engineering</td>
+              </tr>
+              <tr>
+                <td>2019 - 2022</td>
+                <td>Gibson School Systems</td>
+                <td>High School Diploma</td>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td>Online Course - Udemy</td>
+                <td>Python Programming</td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>Udacity</td>
+                <td>Web Development Nanodegree</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Mobile-Landscape -->
+          <div class="dropDown">
+            <div class="title">
+              <h2>Education</h2>
+              <img src="images/down.png" alt="downIcon" />
+            </div>
+            <div class="dropCarousel">
+              <figure class="education-item">
+                <img src="images/AAU.jpg" alt="University Image" />
+                <figcaption>
+                  <strong>2022 - Present</strong> - BSc in Software Engineering,
+                  Addis Ababa University
+                </figcaption>
+              </figure>
+              <figure class="education-item">
+                <img src="images/gss.jpg" alt="High School Image" />
+                <figcaption>
+                  <strong>2019 - 2022</strong> - High School Diploma, Gibson
+                  School Systems
+                </figcaption>
+              </figure>
+              <figure class="education-item">
+                <img src="images/udemy.jpg" alt="Award Image" />
+                <figcaption>
+                  <strong>2023</strong> - Introduction to Programming, Udemy
+                </figcaption>
+              </figure>
+              <figure class="education-item">
+                <img src="images/udacity.jpg" alt="Award Image" />
+                <figcaption>
+                  <strong>2024</strong> - Web Development Nanodegree, Udacity
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="dropDown">
+            <div class="title">
+              <h2>Certificates</h2>
+              <img src="images/down.png" alt="downIcon" />
+            </div>
+            <div class="dropCarousel">
+              <figure class="certificate-item">
+                <img
+                  src="images/Web-Dev.png"
+                  alt="Web Development Certificate"
+                />
+                <figcaption>
+                  <strong>2024</strong> - Certified in Web Development<br />
+                  Comprehensive course covering HTML, CSS, JavaScript, React,
+                  and Node.js.
+                </figcaption>
+              </figure>
+              <figure class="certificate-item">
+                <img
+                  src="images/Packet-Tracer.png"
+                  alt="Packet Tracer Certificate"
+                />
+                <figcaption>
+                  <strong>2023</strong> - Networking Fundamentals<br />
+                  Packet Tracer certification focused on configuring and
+                  troubleshooting network setups.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Tablet-Portrait and Desktop -->
+          <div class="education_timeline">
+            <div class="container left">
+              <div class="content">
+                <h3>2022 - Present</h3>
+                <h5>Addis Ababa University</h5>
+                <p>
+                  BSc in Software Engineering. Focused on web development, AI,
+                  and robotics.
+                </p>
+              </div>
+              <div class="content">
+                <h3>2019 - 2022</h3>
+                <h5>Gibson School Systems</h5>
+                <p>
+                  High School Diploma with distinction in Mathematics and
+                  Science.
+                </p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h3>2023</h3>
+                <h5>Udemy</h5>
+                <p>
+                  Completed a course for Python fundamentals, DSA and functions.
+                </p>
+              </div>
+              <div class="content">
+                <h3>2022</h3>
+                <h5>Udacity</h5>
+                <p>
+                  Earned a Nanodegree in Web Development, focusing more on the
+                  front-end development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="certificates">
+          <div class="certificate">
+            <img src="images/Web-Dev.png" alt="Web Development Certificate" />
+            <p>
+              <strong>Certified in Web Development (2024):</strong> Successfully
+              completed a comprehensive course focusing on front-end and
+              back-end technologies, including HTML, CSS, and JavaScript. Gained
+              hands-on experience building responsive and dynamic web
+              applications.
+            </p>
+          </div>
+          <div class="certificate">
+            <img
+              src="images/Packet-Tracer.png"
+              alt="Packet Tracer Course Certificate"
+            />
+            <p>
+              <strong>Packet Tracer Certification:</strong> Completed a
+              networking simulation course using Cisco's Packet Tracer tool.
+              Developed skills in configuring, analyzing, and troubleshooting
+              network setups in a simulated environment.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>Find Me On:</p>
+        <div class="social_media">
+          <a href="mailto:haymanotseyoum3@gmail.com" target="_blank"
+            ><img src="images/mail.png" alt="Mail"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="images/telegram.png" alt="Telegram"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="images/linkedin.png" alt="LinkedIn"
+          /></a>
+          <a href="" target="_blank"
+            ><img src="images/github.png" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
