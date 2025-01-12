@@ -528,6 +528,15 @@ footer .social_media img {
     height: 30px;
   }
 
+  #skills{
+    display: block;
+  }
+
+  .skills-section{
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer_content {
     display: flex;
     align-items: center;
