@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobby</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/hobby.css" />
   </head>
   <body>
     <!-- Header Section -->
@@ -16,14 +16,29 @@
         <!-- Mobile and Tab Portrait -->
         <button class="hamburger" aria-label="Toggle navigation">
           <img src="images/menu.png" alt="Menu Icon" class="hamburger-icon" />
+          <img
+            src="images/icons8-menu-50.png"
+            alt="White menu"
+            class="white-icon"
+          />
         </button>
+        <div class="dropdown-menu">
+          <button class="close-button" aria-label="Close navigation">X</button>
+          <ul class="navv_links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobby.html" class="active">Hobby</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
 
         <!-- Desktop and Tab Landscape -->
         <ul class="nav_links">
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="hobby.html">Hobby</a></li>
+          <li><a href="hobby.html" class="active">Hobby</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -34,31 +49,38 @@
       <!-- Hobby Section -->
       <section id="hobby">
         <div class="hobby_intro">
-          <div class="slider">
-            <div class="slides">
-              <div class="slide">
-                <img src="images/rockyMount.jpg" alt="Rocky Mountain" />
-              </div>
-              <div class="slide">
-                <img src="images/riverside.jpg" alt="River Side" />
-              </div>
-              <div class="slide">
-                <img src="images/mountain.jpg" alt="Mountain" />
-              </div>
+          <div class="slides">
+            <div class="slide">
+              <img src="images/rockyMount.jpg" alt="Rocky Mountain" />
             </div>
+            <div class="slide">
+              <img src="images/riverside.jpg" alt="River Side" />
+            </div>
+            <div class="slide">
+              <img src="images/mountain.jpg" alt="Mountain" />
+            </div>
+          </div>
+          <div class="shade"></div>
 
-            <!-- Navigation Arrows -->
-            <div class="arrows">
-              <button class="prev" aria-label="Previous Slide"></button>
-              <button class="next" aria-label="Next Slide"></button>
-            </div>
+          <!-- Navigation Dots -->
+          <div class="dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+          </div>
 
-            <!-- Navigation Dots -->
-            <div class="dots">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
+          <div class="vid-bg">
+            <video controls="false" autoplay loop muted>
+              <source src="videos/video-bg-1.mp4" type="video/mp4" />
+              Your browser doesn't support the video tag.
+            </video>
+            <div class="shade"></div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <div class="arrows">
+            <button class="prev" aria-label="Previous Slide">&#9001;</button>
+            <button class="next" aria-label="Next Slide">&#9002;</button>
           </div>
 
           <!-- Intro Overlay Text -->
@@ -76,73 +98,78 @@
         <!-- Travel Section -->
         <section class="travel_section">
           <h2>Travel</h2>
-          <div class="travel_cards">
-            <!-- Travel Card 1 -->
-            <div class="travel_card">
-              <video controls>
-                <source src="videos/video-bg-1.mp4" type="video/mp4" />
-                Your browser doesn't support the video tag.
-              </video>
-              <div class="travel_content">
-                <h3>Mountains</h3>
-                <audio controls>
-                  <source
-                    src="audio/ocean-sound.wav"
-                    type="audio/wav"
-                    id="audio_sound"
-                  />
-                  Your browser doesn't support the audio tag.
-                </audio>
-                <p>
-                  Experience the tranquility of the mountains with serene sounds
-                  of rustling leaves and distant waterfalls.
-                </p>
+          <div class="carousel_container">
+            <div class="travel_cards">
+              <!-- Travel Card 1 -->
+              <div class="travel_card active">
+                <img src="images/mountain.jpg" alt="Mountain" />
+                <div class="travel_content">
+                  <div class="audio_control">
+                    <h3>Mountains</h3>
+                    <audio id="audio_sound">
+                      <source src="audio/ocean-sound.wav" type="audio/wav" />
+                      Your browser doesn't support the audio tag.
+                    </audio>
+                    <img
+                      src="images/volume.png"
+                      alt="volume"
+                      class="play_audio"
+                    />
+                  </div>
+                  <p class="details">
+                    Experience the tranquility of the mountains with serene
+                    sounds of rustling leaves and distant waterfalls.
+                  </p>
+                  <button class="view_details">View Details</button>
+                </div>
               </div>
-            </div>
 
-            <!-- Travel Card 2 -->
-            <div class="travel_card">
-              <img src="images/dubai.jpg" alt="Dubai" />
-              <div class="travel_content">
-                <h3>Dubai</h3>
-                <p>
-                  A modern oasis offering stunning skyscrapers, luxury shopping,
-                  and unforgettable desert adventures.
-                </p>
+              <!-- Travel Card 2 -->
+              <div class="travel_card reverse">
+                <img src="images/dubai.jpg" alt="Dubai" />
+                <div class="travel_content">
+                  <h3>Dubai</h3>
+                  <p>
+                    A modern oasis offering stunning skyscrapers, luxury
+                    shopping, and unforgettable desert adventures.
+                  </p>
+                  <button class="view_details">View Details</button>
+                </div>
               </div>
-            </div>
 
-            <!-- Travel Card 3 -->
-            <div class="travel_card">
-              <img src="images/bangkok.jpg" alt="Bangkok" />
-              <div class="travel_content">
-                <h3>Bangkok</h3>
-                <p>
-                  Discover vibrant street markets, ornate temples, and the rich
-                  culture of Thailand.
-                </p>
+              <!-- Travel Card 3 -->
+              <div class="travel_card">
+                <img src="images/bangkok.jpg" alt="Bangkok" />
+                <div class="travel_content">
+                  <h3>Bangkok</h3>
+                  <p>
+                    Discover vibrant street markets, ornate temples, and the
+                    rich culture of Thailand.
+                  </p>
+                  <button class="view_details">View Details</button>
+                </div>
               </div>
-            </div>
 
-            <!-- Travel Card 4 -->
-            <div class="travel_card">
-              <img src="images/dallas.jpg" alt="Dallas" />
-              <div class="travel_content">
-                <h3>Dallas</h3>
-                <p>
-                  Known for its historical landmarks, modern art scenes, and
-                  famous Texan hospitality.
-                </p>
+              <!-- Travel Card 4 -->
+              <div class="travel_card reverse">
+                <img src="images/dallas.jpg" alt="Dallas" />
+                <div class="travel_content">
+                  <h3>Dallas</h3>
+                  <p>
+                    Known for its historical landmarks, modern art scenes, and
+                    famous Texan hospitality.
+                  </p>
+                  <button class="view_details">View Details</button>
+                </div>
               </div>
             </div>
           </div>
-
           <!-- Travel Navigation Arrows -->
           <div class="travel_arrows">
-            <button class="prev" aria-label="Previous Card">
+            <button class="prevv" aria-label="Previous Card">
               <img src="images/prev.png" alt="Previous" />
             </button>
-            <button class="next" aria-label="Next Card">
+            <button class="nextt" aria-label="Next Card">
               <img src="images/next.png" alt="Next" />
             </button>
           </div>
@@ -164,45 +191,71 @@
         <section class="timeline_section">
           <h2>My Travel Timeline</h2>
           <div class="timeline">
-            <div class="timeline_item<right">
-              <img src="images/tajMahal.jpg" alt="Taj Mahal" />
-              <h3>India</h3>
-              <p>
-                Visited in 2012. A journey through India’s vibrant culture led
-                me to the majestic Taj Mahal, bustling markets, and delicious
-                cuisine. The experience was unforgettable, with rich history and
-                warm hospitality leaving a lasting impression.
-              </p>
+            <div class="timeline_line"></div>
+
+            <div class="timeline_item">
+              <div class="timeline_circle"></div>
+              <div class="desc">
+                <img src="images/tajMahal.jpg" alt="Taj Mahal" />
+                <div>
+                  <h3>India</h3>
+                  <p>
+                    Visited in 2012. A journey through India’s vibrant culture
+                    led me to the majestic Taj Mahal, bustling markets, and
+                    delicious cuisine. The experience was unforgettable, with
+                    rich history and warm hospitality leaving a lasting
+                    impression.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="timeline_item_right">
-              <img src="images/dubai.jpg" alt="Dubai" />
-              <h3>Dubai</h3>
-              <p>
-                Visited in 2019. Dubai dazzled me with its futuristic skyline,
-                thrilling desert safaris, and luxury experiences. From the Burj
-                Khalifa to the Dubai Mall, it was a perfect blend of modernity
-                and adventure.
-              </p>
+
+            <div class="timeline_item">
+              <div class="timeline_circle"></div>
+              <div class="desc">
+                <img src="images/dubai.jpg" alt="Dubai" />
+                <div>
+                  <h3>Dubai</h3>
+                  <p>
+                    Visited in 2019. Dubai dazzled me with its futuristic
+                    skyline, thrilling desert safaris, and luxury experiences.
+                    From the Burj Khalifa to the Dubai Mall, it was a perfect
+                    blend of modernity and adventure.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="timeline_item_left">
-              <img src="images/dallas.jpg" alt="Dallas" />
-              <h3>Dallas</h3>
-              <p>
-                Visited in 2020. My trip to Dallas was all about discovering
-                Texan charm, lively art districts, and iconic landmarks like the
-                Reunion Tower. The city's rich history and barbecue scene made
-                the visit truly special.
-              </p>
+
+            <div class="timeline_item">
+              <div class="timeline_circle"></div>
+              <div class="desc">
+                <img src="images/dallas.jpg" alt="Dallas" />
+                <div>
+                  <h3>Dallas</h3>
+                  <p>
+                    Visited in 2020. My trip to Dallas was all about discovering
+                    Texan charm, lively art districts, and iconic landmarks like
+                    the Reunion Tower. The city's rich history and barbecue
+                    scene made the visit truly special.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="timeline_item_left">
-              <img src="images/bangkok.jpg" alt="Bangkok" />
-              <h3>Bangkok</h3>
-              <p>
-                Visited in 2022. Bangkok was a sensory delight, with colorful
-                street markets, awe-inspiring temples like Wat Arun, and the
-                lively chaos of its streets. It was a perfect mix of tradition
-                and modernity.
-              </p>
+
+            <div class="timeline_item">
+              <div class="timeline_circle"></div>
+              <div class="desc">
+                <img src="images/bangkok.jpg" alt="Bangkok" />
+                <div>
+                  <h3>Bangkok</h3>
+                  <p>
+                    Visited in 2022. Bangkok was a sensory delight, with
+                    colorful street markets, awe-inspiring temples like Wat
+                    Arun, and the lively chaos of its streets. It was a perfect
+                    mix of tradition and modernity.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -214,20 +267,25 @@
       <div class="footer_content">
         <p>Find Me On:</p>
         <div class="social_media">
-          <a href="mailto:haymanotseyoum3@gmail.com"
-            ><img src="images/mail.png" alt="Mail"
-          /></a>
-          <a href="https://t.me/haymihhm"
-            ><img src="images/telegram.png" alt="Telegram"
-          /></a>
-          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/"
-            ><img src="images/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="https://github.com/Haymisey"
-            ><img src="images/github.png" alt="GitHub"
-          /></a>
+          <a href="mailto:haymanotseyoum3@gmail.com">
+            <img src="images/mail.png" alt="Mail" />
+          </a>
+          <a href="https://t.me/haymihhm">
+            <img src="images/telegram.png" alt="Telegram" />
+          </a>
+          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <div class="github_section">
+            <hr />
+            <a href="https://github.com/Haymisey">
+              <img src="images/github.png" alt="GitHub" />
+              <span>@Haymisey</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="../js/hobby.js"></script>
   </body>
 </html>

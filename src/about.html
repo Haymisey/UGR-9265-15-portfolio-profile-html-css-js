@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/about.css" />
   </head>
   <body>
     <header>
@@ -16,10 +16,20 @@
         <button class="hamburger" aria-label="Toggle navigation">
           <img src="images/menu.png" alt="Menu Icon" class="hamburger-icon" />
         </button>
+        <div class="dropdown-menu">
+          <button class="close-button" aria-label="Close navigation">X</button>
+          <ul class="navv_links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
         <!-- Desktop and Tab-landscape-->
         <ul class="nav_links">
           <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
+          <li><a href="about.html" class="active">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="hobby.html">Hobby</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -43,6 +53,7 @@
         </div>
 
         <div class="education">
+          <h2>Education</h2>
           <!-- Mobile-Portrait and Tab-Landscape -->
           <table>
             <thead>
@@ -54,22 +65,22 @@
             </thead>
             <tbody>
               <tr>
-                <td>2022 - Present</td>
+                <td class="date">2022 - Present</td>
                 <td>Addis Ababa University</td>
                 <td>BSc in Software Engineering</td>
               </tr>
               <tr>
-                <td>2019 - 2022</td>
+                <td class="date padd">2019 - 2022</td>
                 <td>Gibson School Systems</td>
                 <td>High School Diploma</td>
               </tr>
-              <tr>
-                <td>2023</td>
+              <tr class="invisible">
+                <td class="date">2023</td>
                 <td>Online Course - Udemy</td>
                 <td>Python Programming</td>
               </tr>
-              <tr>
-                <td>2024</td>
+              <tr class="invisible">
+                <td class="date">2024</td>
                 <td>Udacity</td>
                 <td>Web Development Nanodegree</td>
               </tr>
@@ -79,73 +90,87 @@
           <!-- Mobile-Landscape -->
           <div class="dropDown">
             <div class="title">
-              <h2>Education</h2>
+              <h3>Education</h3>
               <img src="images/down.png" alt="downIcon" />
             </div>
             <div class="dropCarousel">
-              <figure class="education-item">
-                <img src="images/AAU.jpg" alt="University Image" />
-                <figcaption>
-                  <strong>2022 - Present</strong> - BSc in Software Engineering,
-                  Addis Ababa University
-                </figcaption>
-              </figure>
-              <figure class="education-item">
-                <img src="images/gss.jpg" alt="High School Image" />
-                <figcaption>
-                  <strong>2019 - 2022</strong> - High School Diploma, Gibson
-                  School Systems
-                </figcaption>
-              </figure>
-              <figure class="education-item">
-                <img src="images/udemy.jpg" alt="Award Image" />
-                <figcaption>
-                  <strong>2023</strong> - Introduction to Programming, Udemy
-                </figcaption>
-              </figure>
-              <figure class="education-item">
-                <img src="images/udacity.jpg" alt="Award Image" />
-                <figcaption>
-                  <strong>2024</strong> - Web Development Nanodegree, Udacity
-                </figcaption>
-              </figure>
+              <div class="carousel">
+                <figure class="education-item">
+                  <img src="images/AAU.jpg" alt="University Image" />
+                  <figcaption>
+                    <strong>2022 - Present</strong> - BSc in Software
+                    Engineering, Addis Ababa University
+                  </figcaption>
+                </figure>
+                <figure class="education-item">
+                  <img src="images/gss.jpg" alt="High School Image" />
+                  <figcaption>
+                    <strong>2019 - 2022</strong> - High School Diploma, Gibson
+                    School Systems
+                  </figcaption>
+                </figure>
+                <figure class="education-item">
+                  <img src="images/udemy.jpg" alt="Award Image" />
+                  <figcaption>
+                    <strong>2023</strong> - Introduction to Programming, Udemy
+                  </figcaption>
+                </figure>
+                <figure class="education-item">
+                  <img src="images/udacity.jpg" alt="Award Image" />
+                  <figcaption>
+                    <strong>2024</strong> - Web Development Nanodegree, Udacity
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="dots">
+                <span class="dot" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+              </div>
             </div>
           </div>
           <div class="dropDown">
             <div class="title">
-              <h2>Certificates</h2>
+              <h3>Certificates</h3>
               <img src="images/down.png" alt="downIcon" />
             </div>
             <div class="dropCarousel">
-              <figure class="certificate-item">
-                <img
-                  src="images/Web-Dev.png"
-                  alt="Web Development Certificate"
-                />
-                <figcaption>
-                  <strong>2024</strong> - Certified in Web Development<br />
-                  Comprehensive course covering HTML, CSS, JavaScript, React,
-                  and Node.js.
-                </figcaption>
-              </figure>
-              <figure class="certificate-item">
-                <img
-                  src="images/Packet-Tracer.png"
-                  alt="Packet Tracer Certificate"
-                />
-                <figcaption>
-                  <strong>2023</strong> - Networking Fundamentals<br />
-                  Packet Tracer certification focused on configuring and
-                  troubleshooting network setups.
-                </figcaption>
-              </figure>
+              <div class="carousel">
+                <figure class="certificate-item">
+                  <img
+                    src="images/Web-Dev.png"
+                    alt="Web Development Certificate"
+                  />
+                  <figcaption>
+                    <strong>2024</strong> - Certified in Web Development<br />
+                    Comprehensive course covering HTML, CSS, JavaScript, React,
+                    and Node.js.
+                  </figcaption>
+                </figure>
+                <figure class="certificate-item">
+                  <img
+                    src="images/Packet-Tracer.png"
+                    alt="Packet Tracer Certificate"
+                  />
+                  <figcaption>
+                    <strong>2023</strong> - Networking Fundamentals<br />
+                    Packet Tracer certification focused on configuring and
+                    troubleshooting network setups.
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="dots">
+                <span class="dot" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+              </div>
             </div>
           </div>
 
           <!-- Tablet-Portrait and Desktop -->
           <div class="education_timeline">
             <div class="container left">
-              <div class="content">
+              <div class="content one">
                 <h3>2022 - Present</h3>
                 <h5>Addis Ababa University</h5>
                 <p>
@@ -153,7 +178,7 @@
                   and robotics.
                 </p>
               </div>
-              <div class="content">
+              <div class="content three">
                 <h3>2019 - 2022</h3>
                 <h5>Gibson School Systems</h5>
                 <p>
@@ -163,14 +188,14 @@
               </div>
             </div>
             <div class="container right">
-              <div class="content">
+              <div class="content two">
                 <h3>2023</h3>
                 <h5>Udemy</h5>
                 <p>
                   Completed a course for Python fundamentals, DSA and functions.
                 </p>
               </div>
-              <div class="content">
+              <div class="content four">
                 <h3>2022</h3>
                 <h5>Udacity</h5>
                 <p>
@@ -178,11 +203,58 @@
                   front-end development.
                 </p>
               </div>
+              <div class="circle one"></div>
+              <div class="circle two"></div>
+            </div>
+          </div>
+          <div class="education_timeline_desktop">
+            <div class="timeline">
+              <div class="container up">
+                <div class="content">
+                  <h3>2022 - Present</h3>
+                  <h5>Addis Ababa University</h5>
+                  <p>
+                    BSc in Software Engineering. Focused on web development, AI,
+                    and robotics.
+                  </p>
+                </div>
+              </div>
+              <div class="container down">
+                <div class="content">
+                  <h3>2019 - 2022</h3>
+                  <h5>Gibson School Systems</h5>
+                  <p>
+                    High School Diploma with distinction in Mathematics and
+                    Science.
+                  </p>
+                </div>
+              </div>
+              <div class="container up">
+                <div class="content">
+                  <h3>2023</h3>
+                  <h5>Udemy</h5>
+                  <p>
+                    Completed a course for Python fundamentals, DSA and
+                    functions.
+                  </p>
+                </div>
+              </div>
+              <div class="container down">
+                <div class="content">
+                  <h3>2022</h3>
+                  <h5>Udacity</h5>
+                  <p>
+                    Earned a Nanodegree in Web Development, focusing more on the
+                    front-end development.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="certificates">
+          <h2>Certificates</h2>
           <div class="certificate">
             <img src="images/Web-Dev.png" alt="Web Development Certificate" />
             <p>
@@ -193,7 +265,7 @@
               applications.
             </p>
           </div>
-          <div class="certificate">
+          <div class="certificate reverse">
             <img
               src="images/Packet-Tracer.png"
               alt="Packet Tracer Course Certificate"
@@ -212,20 +284,25 @@
       <div class="footer_content">
         <p>Find Me On:</p>
         <div class="social_media">
-          <a href="mailto:haymanotseyoum3@gmail.com"
-            ><img src="images/mail.png" alt="Mail"
-          /></a>
-          <a href="https://t.me/haymihhm"
-            ><img src="images/telegram.png" alt="Telegram"
-          /></a>
-          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/"
-            ><img src="images/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="https://github.com/Haymisey"
-            ><img src="images/github.png" alt="GitHub"
-          /></a>
+          <a href="mailto:haymanotseyoum3@gmail.com">
+            <img src="images/mail.png" alt="Mail" />
+          </a>
+          <a href="https://t.me/haymihhm">
+            <img src="images/telegram.png" alt="Telegram" />
+          </a>
+          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <div class="github_section">
+            <hr />
+            <a href="https://github.com/Haymisey">
+              <img src="images/github.png" alt="GitHub" />
+              <span>@Haymisey</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="../js/about.js"></script>
   </body>
 </html>

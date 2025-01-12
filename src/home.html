@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
     <title>Home</title>
   </head>
   <body>
@@ -14,10 +15,25 @@
         <!-- Mobile and Tab portrait -->
         <button class="hamburger" aria-label="Toggle navigation">
           <img src="images/menu.png" alt="Menu Icon" class="hamburger-icon" />
+          <img
+            src="images/icons8-menu-50.png"
+            alt="White menu"
+            class="white-icon"
+          />
         </button>
+        <div class="dropdown-menu">
+          <button class="close-button" aria-label="Close navigation">X</button>
+          <ul class="navv_links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
         <!-- Desktop and Tab-landscape-->
         <ul class="nav_links">
-          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html" class="active">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="hobby.html">Hobby</a></li>
@@ -28,36 +44,38 @@
     <main>
       <section id="home">
         <div class="home_content">
-          <h1>Hi👋, I am <span class="text">Haymanot</span></h1>
-          <p>
-            Welcome to My Portfolio! I'm thrilled to have you here as you take a
-            closer look at my <strong>journey</strong>, explore the
-            <strong>projects</strong> I’ve worked on, and discover the
-            <strong>skills</strong> I’ve honed over time.<br />
-            As you explore, you’ll find not only my work in software development
-            and design but also my love for <strong>travel</strong> and
-            <strong>photography</strong>. These passions allow me to express
-            creativity in unique ways and continually inspire my professional
-            growth. Take a moment to dive deeper into the world I’m building—one
-            filled with innovation, exploration, and the joy of creating
-            impactful experiences.
-          </p>
-
+          <div class="text">
+            <h1>Hi👋, I am <span class="text">Haymanot</span></h1>
+            <p>
+              Welcome to My Portfolio! I'm thrilled to have you here as you take
+              a closer look at my <strong>journey</strong>, explore the
+              <strong>projects</strong> I’ve worked on, and discover the
+              <strong>skills</strong> I’ve honed over time.<br />
+              As you explore, you’ll find not only my work in software
+              development and design but also my love for
+              <strong>travel</strong> and <strong>photography</strong>. These
+              passions allow me to express creativity in unique ways and
+              continually inspire my professional growth. Take a moment to dive
+              deeper into the world I’m building—one filled with innovation,
+              exploration, and the joy of creating impactful experiences.
+            </p>
+          </div>
           <img
             src="images/profile1.png"
             alt="profile image"
-            class="tab-landscape-specific"
+            class="hero_image"
           />
+          <div class="shades"></div>
         </div>
         <div id="cta">
           <div class="cta_mobile_landscape">
-            <a href="contact.html" class="btn">Contact Me</a>
+            <a href="contact.html" class="btn trans">Contact Me</a>
           </div>
           <div class="cta_tablet_portrait">
             <a href="projects.html" class="btn">Explore My Projects</a>
           </div>
           <div class="cta_desktop_mobile_portrait">
-            <a href="https://github.com/Haymisey" class="btn">GitHub</a>
+            <a href="https://github.com/Haymisey" class="btn trans">GitHub</a>
             <a href="contact.html" class="btn">Contact Me</a>
           </div>
         </div>
@@ -73,14 +91,14 @@
               <img src="images/js.png" alt="Javascript" />
               <img src="images/reactjs.png" alt="React" />
             </div>
-            <a href="project.html">View All</a>
+            <a href="project.html">View All &#8594;</a>
           </div>
           <div class="projects_section">
             <h3>Projects</h3>
             <div class="project">
               <img src="images/Amazon.png" alt="" />
               <p>E-commerce Website</p>
-              <a href="project.html">View All</a>
+              <a href="projects.html">View All &#8594;</a>
             </div>
           </div>
           <div class="hobby_section">
@@ -90,26 +108,36 @@
               Your browser doesn't support the browser tag.
             </video>
             <p>Exploring the mountains has always been my passion.</p>
-            <a href="#hobby">Read Full</a>
+            <a href="hobby.html">Read Full</a>
           </div>
         </div>
         <div class="highlights_mobile_landscape">
           <h3>Featured Projects</h3>
-          <div class="carousel">
-            <figure>
-              <img src="images/Amazon.png" alt="" />
-              <figcaption>E-commerce Website</figcaption>
-            </figure>
-            <figure>
-              <img src="images/Spotify.png" alt="" />
-              <figcaption>Music Streaming Website</figcaption>
-            </figure>
-            <figure>
-              <img src="images/Netflix.png" alt="" />
-              <figcaption>Movie Streaming Website</figcaption>
-            </figure>
+          <div class="carousel_container">
+            <div class="carousel">
+              <figure>
+                <img src="images/Amazon.png" alt="E-commerce Website" />
+                <figcaption><strong>Amazon Clone</strong></figcaption>
+                <figcaption>
+                  A fully responsive e-commerce platform inspired by amazon
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="images/Spotify.png" alt="Music Streaming Website" />
+                <figcaption><strong>Spotify Clone</strong></figcaption>
+              </figure>
+              <figure>
+                <img src="images/Netflix.png" alt="Movie Streaming Website" />
+                <figcaption><strong>Netflix Clone</strong></figcaption>
+              </figure>
+            </div>
           </div>
-          <a href="project.html">View All</a>
+          <a href="project.html" class="view_all">View All &#8594;</a>
+          <!-- Navigation Arrows -->
+          <div class="arrows">
+            <button class="prev" aria-label="Previous Slide">&#9001;</button>
+            <button class="next" aria-label="Next Slide">&#9002;</button>
+          </div>
         </div>
 
         <div class="highlights_tablet_portrait">
@@ -121,13 +149,14 @@
               <img src="images/js.png" alt="Javascript" />
               <img src="images/reactjs.png" alt="React" />
             </div>
-            <a href="project.html">View All</a>
+            <a href="project.html">View All &#8594;</a>
           </div>
           <div class="skills_progress">
+            <h3>Expertise</h3>
             <div class="skill_box">
               <span class="title">HTML</span>
               <div class="skill_bar">
-                <span class="skill_per">
+                <span class="skill_per html">
                   <span class="tooltip">90%</span>
                 </span>
               </div>
@@ -135,7 +164,7 @@
             <div class="skill_box">
               <span class="title">CSS</span>
               <div class="skill_bar">
-                <span class="skill_per">
+                <span class="skill_per css">
                   <span class="tooltip">85%</span>
                 </span>
               </div>
@@ -143,13 +172,14 @@
             <div class="skill_box">
               <span class="title">JS</span>
               <div class="skill_bar">
-                <span class="skill_per">
+                <span class="skill_per js">
                   <span class="tooltip">70%</span>
                 </span>
               </div>
             </div>
           </div>
         </div>
+
         <div class="highlights_tablet_landscape">
           <div class="projects_section">
             <h3>Featured Projects</h3>
@@ -158,23 +188,32 @@
               <img src="images/Amazon.png" alt="Amazon" />
               <img src="images/Netflix.png" alt="Netflix" />
             </div>
-            <a href="project.html">View All</a>
+            <a href="projects.html">View All &#8594;</a>
           </div>
           <div class="hobby_section">
             <h3>Hobby</h3>
-            <div class="carousel">
-              <div class="carousel_item">
-                <img src="images/mountain.jpg" alt="" />
-                <p>Hiking through the mountains is my favorite activity.</p>
+            <div class="carousel_container">
+              <div class="carousell">
+                <div class="carousel_item">
+                  <img
+                    src="images/mountain.jpg"
+                    alt="Hiking through the mountains"
+                  />
+                  <p>Hiking through the mountains is my favorite activity.</p>
+                </div>
+                <div class="carousel_item">
+                  <img src="images/treeHall.jpg" alt="Exploring nature" />
+                  <p>Exploring nature brings me peace and joy.</p>
+                </div>
+                <div class="carousel_item">
+                  <img src="images/puppy.jpg" alt="Photography" />
+                  <p>Photography is another passion of mine.</p>
+                </div>
               </div>
-              <div class="carousel_item">
-                <img src="images/treeHall.jpg" alt="" />
-                <p>Exploring nature brings me peace and joy.</p>
-              </div>
-              <div class="carousel_item">
-                <img src="images/puppy.jpg" alt="Sunflower" />
-                <p>Photography is another passion of mine.</p>
-              </div>
+            </div>
+            <div class="arrows">
+              <button class="prevv" aria-label="Previous Slide">&#9001;</button>
+              <button class="nextt" aria-label="Next Slide">&#9002;</button>
             </div>
           </div>
         </div>
@@ -187,31 +226,37 @@
               <img src="images/js.png" alt="Javascript" />
               <img src="images/reactjs.png" alt="React" />
             </div>
-            <a href="project.html">View All</a>
+            <a href="projects.html">View All &#8594;</a>
           </div>
-        </div>
-        <div class="projects">
-          <h3>Projects</h3>
-          <img src="images/Spotify.png" alt="Spotify" />
-          <div class="project_description">
-            <h4>Spotify</h4>
-            <p>
-              A fully functional music streaming platform inspired by
-              Spotify.Dive into this project to explore how cutting-edge web
-              technologies are used to create an immersive user experience.
-            </p>
-            <a href="project.html">View Project</a>
+
+          <div class="projects">
+            <h3>Projects</h3>
+            <div class="project-item">
+              <img src="images/Spotify.png" alt="Spotify" />
+              <div class="project_description">
+                <h4>Spotify</h4>
+                <p>
+                  A fully functional music streaming platform inspired by
+                  Spotify.Dive into this project to explore how cutting-edge web
+                  technologies are used to create an immersive user experience.
+                </p>
+                <a href="projects.html">View Project</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="hobby_section">
-          <video controls>
-            <source src="videos/video-bg-1.mp4" type="video/mp4" />
-            Your browser doesn't support the browser tag.
-          </video>
-          <div class="hobby_description">
+          <div class="hobby_section">
             <h3>Hobby</h3>
-            <p>Exploring the mountains has always been my passion.</p>
-            <a href="#hobby">View Details</a>
+            <div class="hobby">
+              <video controls>
+                <source src="videos/video-bg-1.mp4" type="video/mp4" />
+                Your browser doesn't support the browser tag.
+              </video>
+              <div class="hobby_description">
+                <h3>Hobby</h3>
+                <p>Exploring the mountains has always been my passion.</p>
+                <a href="hobby.html">View Details</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -220,20 +265,25 @@
       <div class="footer_content">
         <p>Find Me On:</p>
         <div class="social_media">
-          <a href="mailto:haymanotseyoum3@gmail.com"
-            ><img src="images/mail.png" alt="Mail"
-          /></a>
-          <a href="https://t.me/haymihhm"
-            ><img src="images/telegram.png" alt="Telegram"
-          /></a>
-          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/"
-            ><img src="images/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="https://github.com/Haymisey"
-            ><img src="images/github.png" alt="GitHub"
-          /></a>
+          <a href="mailto:haymanotseyoum3@gmail.com">
+            <img src="images/mail.png" alt="Mail" />
+          </a>
+          <a href="https://t.me/haymihhm">
+            <img src="images/telegram.png" alt="Telegram" />
+          </a>
+          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <div class="github_section">
+            <hr />
+            <a href="https://github.com/Haymisey">
+              <img src="images/github.png" alt="GitHub" />
+              <span>@Haymisey</span>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="../js/home.js"></script>
   </body>
 </html>
