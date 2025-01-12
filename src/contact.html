@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
     <header>
@@ -16,13 +16,23 @@
         <button class="hamburger" aria-label="Toggle navigation">
           <img src="images/menu.png" alt="Menu Icon" class="hamburger-icon" />
         </button>
+        <div class="dropdown-menu">
+          <button class="close-button" aria-label="Close navigation">X</button>
+          <ul class="navv_links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" >About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </div>
         <!-- Desktop and Tab-landscape-->
         <ul class="nav_links">
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="hobby.html">Hobby</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -54,14 +64,15 @@
           </form>
         </div>
         <div class="contact_details">
-          <p>Phone: 0929871221</p>
+          <p><strong>Phone:</strong> 0929871221</p>
           <p>
-            Email:
+            <strong>Email:</strong>
+
             <a href="mailto:haymanotseyoum3@gmail.com"
               >haymanotseyoum3@gmail.com</a
             >
           </p>
-          <p>Address: Addis Ababa, Ethiopia</p>
+          <p><strong>Address:</strong> Addis Ababa, Ethiopia</p>
         </div>
       </section>
     </main>
@@ -69,18 +80,22 @@
       <div class="footer_content">
         <p>Find Me On:</p>
         <div class="social_media">
-          <a href="mailto:haymanotseyoum3@gmail.com"
-            ><img src="images/mail.png" alt="Mail"
-          /></a>
-          <a href="https://t.me/haymihhm"
-            ><img src="images/telegram.png" alt="Telegram"
-          /></a>
-          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/"
-            ><img src="images/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="https://github.com/Haymisey"
-            ><img src="images/github.png" alt="GitHub"
-          /></a>
+          <a href="mailto:haymanotseyoum3@gmail.com">
+            <img src="images/mail.png" alt="Mail" />
+          </a>
+          <a href="https://t.me/haymihhm">
+            <img src="images/telegram.png" alt="Telegram" />
+          </a>
+          <a href="https://www.linkedin.com/in/haymanot-seyoum-285643295/">
+            <img src="images/linkedin.png" alt="LinkedIn" />
+          </a>
+          <div class="github_section">
+            <hr />
+            <a href="https://github.com/Haymisey">
+              <img src="images/github.png" alt="GitHub" />
+              <span>@Haymisey</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -112,5 +127,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/contact.js"></script>
   </body>
 </html>
